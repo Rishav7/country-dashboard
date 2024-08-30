@@ -1,0 +1,44 @@
+
+.countryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.countryCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f9f9f9; /* Matching the background color with details page */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  height: 300px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.countryCard:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  border: 1px solid #005bb5; /* Consistent hover border color */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.countryImage {
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.countryName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.countryInfo {
+  font-size: 1rem;
+  color: #555;
+  margin: 4px 0;
+}
